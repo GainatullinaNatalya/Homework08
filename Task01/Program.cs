@@ -1,4 +1,6 @@
-﻿void FillMatrix(int[,] matr, int min, int max)
+﻿//Найти произведение двух матриц
+
+void FillMatrix(int[,] matr, int min, int max)
 {
     for (int i = 0; i < matr.GetLength(0); i++)
     {
@@ -37,11 +39,11 @@ int[,] MultiplicationMatrix(int[,] matrix1, int[,] matrix2, int[,] matrix3)
     return matrix3;
 }
 
-int ReadIntegerNumber(string message) 
-{ 
-    Console.Write(message); 
-    return int.Parse(Console.ReadLine() ?? "0"); 
-} 
+int ReadIntegerNumber(string message)
+{
+    Console.Write(message);
+    return int.Parse(Console.ReadLine() ?? "0");
+}
 
 Console.WriteLine("Введите размер первого массива: ");
 int m = ReadIntegerNumber("Количество строк: ");
