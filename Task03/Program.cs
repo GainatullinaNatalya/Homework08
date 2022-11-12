@@ -1,6 +1,5 @@
-﻿// В двумерном массиве целых чисел. Удалить строку и столбец, на пересечении которых расположен наименьший элемент.
-// Просто сформировать и вывести трехмерный массив 
-
+﻿// Сформировать трехмерный массив /не повторяющимися двузначными числами (не обязательно)/ 
+//показать его построчно на экран выводя индексы соответствующего элемента
 
 void FillThreeArray(int[,,] array, int min, int max)
 {
@@ -20,13 +19,12 @@ void PrintThreeArray(int[,,] array)
         {
             for (int k = 0; k < array.GetLength(2); k++)
             {
-                Console.Write($"|{j}| {array[i,j,k]}; ");
+                Console.Write($"|{j}| {array[i, j, k]}; ");
             }
             Console.WriteLine();
         }
         Console.WriteLine();
     }
-
 }
 
 int ReadIntegerNumber(string message)
